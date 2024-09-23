@@ -1,8 +1,10 @@
+// src/App.test.js
+import React from 'react';
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+test('renders Item Filter App header', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const headerElement = screen.getByText(/item filter app/i); // Update to match your header
+  expect(headerElement).toBeInTheDocument();
 });
